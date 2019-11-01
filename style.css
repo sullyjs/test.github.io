@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+/*
+Content:
+
+1: General
+2: Landing Page
+3: Navigation Bar
+
+
+*/
+
+/* 1: General*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    font:400 14px/1.8 poppins, sans-serif;
+        -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color:  #23272A;
+    background-image: url("https://cdn.discordapp.com/attachments/466029375377375272/486051663195537419/overlay.png"), -moz-linear-gradient(45deg, rgb(26, 29, 31) 15%, rgb(26, 29, 31) 100%) !important;
+      background-image: url("https://cdn.discordapp.com/attachments/466029375377375272/486051663195537419/overlay.png"), -webkit-linear-gradient(45deg, rgb(26, 29, 31) 15%, rgb(26, 29, 31) 100%) !important;
+      background-image: url("https://cdn.discordapp.com/attachments/466029375377375272/486051663195537419/overlay.png"), -moz-linear-gradient(45deg, rgb(26, 29, 31) 15%, rgb(26, 29, 31)100%) !important;
+      background-image: url("https://cdn.discordapp.com/attachments/466029375377375272/486051663195537419/overlay.png"), linear-gradient(45deg, rgb(26, 29, 31) 15%, rgb(26, 29, 31) 100%) !important;
+}
+
+
+h1 {
+	font-family: poppins, sans-serif;
+	color: white;
+	font-size: 2rem;
+}
+
+
+h3, th {
+	font-family: poppins, sans-serif;
+	color: white;
+	font-size: 1rem;
+}
+
+h2 {
+	font-family: poppins, sans-serif;
+	color: white;
+}
+
+p, td, a {
+	font-family: poppins, sans-serif;
+	color: white;
+}
+
+.outro p { 
+	font-size: 12px;
+	text-align: center;
+}
+
+
+.center {
+	text-align: center;
+}
+
+.left {
+	text-align: left;
+}
+
+.right {
+	text-align: right;
+} 
+
+/* 2: Landing Page */
+.intro {
+	height: 100%;
+	width: 100%;
+	margin: auto;
+	display: table;
+	top: 0;
+	background-size: cover;
+	
+}
+
+.intro .inner {
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	max-width: none;
+}
+
+.content {
+	max-width: 500px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.content h1 {
+	color: white;
+	font-size: 300%;
+}
+
+.btnnav {
+	border: 2px solid white;
+	font-family: "Oswald", sans-serif;
+	color: white;
+	font-size: 120%;
+	padding: 15px 15px 15px 15px;
+	transition: all 0.4s ease 0s;
+	border-radius: 15px;
+	display: inline-block;
+	text-transform: uppercase;
+	text-decoration: none;
+	width: 120px;
+}
+
+.btnnav:hover {
+  color: #9370DB;
+  border-color: #9370DB;
+  text-decoration:none;  
+  transition-duration: .2s;
+  -webkit-transition-duration: .2s;
+  -moz-transition-duration: .2s;
+}
+
+
+/*Navigation*/
+@import url("//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css");
+.menu, .menu-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: #3f3f3f;
+    z-index:10;  
+    overflow:hidden;
+    box-shadow: 2px 0 18px rgba(0, 0, 0, 0.26);
+}
+.menu li a{
+  display: block;
+  text-indent: -500em;
+  height: 5em;
+  width: 5em;
+  line-height: 5em;
+  text-align:center;
+  color: #ffffff;
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  transition: background 0.1s ease-in-out;
+}
+.menu li a:before {
+  font-family: FontAwesome;
+  speak: none;
+  text-indent: 0em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 1.4em;
+}
+.menu li a.search:before {
+  content: "\f002";
+}
+.menu li a.archive:before {
+  content: "\f187";
+}
+.menu li a.pencil:before {
+  content: "\f040";
+}
+.menu li a.contact:before {
+  content: "\f003";
+}
+.menu li a.about:before {
+  content: "\f007";
+}
+.menu li a.home:before {
+  content: "\f039";
+}
+.menu-bar li a:hover,
+.menu li a:hover,
+.menu li:first-child a {
+  background: #9370DB;
+  color: #fff;
+}
+.menu-bar{
+    overflow:hidden;
+    left:5em;
+    z-index:5;
+    width:0;
+    height:0;
+    transition: all 0.1s ease-in-out;
+}
+.menu-bar li a{
+  display: block;
+  height: 4em;
+  line-height: 4em;
+  text-align:center;
+  color: #ffffff;
+  text-decoration:none;  
+  position: relative;
+  font-family:verdana;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  transition: background 0.1s ease-in-out;
+}
+.menu-bar li:first-child a{
+    height:5em;
+    background: #9370DB;
+    color: #fff;    
+    line-height:5
+}
+
+
+.para{
+    color:#033f72;
+    padding-left:100px;
+    font-size:3em;
+    margin-bottom:20px;
+}
+
+.open{
+    width:10em;
+    height:100%;
+}
+
+@media all and (max-width: 500px) {
+    .container{
+        margin-top:100px;
+    }
+    .menu{
+        height:5em;
+        width:100%;
+    }
+    .menu li{
+        display:inline-block;
+        float:left;
+    }
+    .menu-bar li a{
+        width:100%;
+    }
+    .menu-bar{
+        width:100%;
+        left:0;
+        height:0;
+    }
+    .open{
+        width:100%;
+        height:auto;
+    }
+    .para{
+    padding-left:5px;
+}  
+}
+@media screen and (max-height: 34em){
+  .menu li,
+  .menu-bar {
+    font-size:70%;
+  }
+}
+@media screen and (max-height: 34em) and (max-width: 500px){
+  .menu{
+        height:3.5em;
+    }
+}
+
+/* footer */
+
+footer p {
+	font-size: 10px;
+}
